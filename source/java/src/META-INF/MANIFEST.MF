@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Export-Package: com.squidfoundry
+Bundle-ManifestVersion: 2
+Class-Path: . commons-csv-1.5.jar
+Import-Package: org.apache.commons.csv
+Require-Bundle: lucee.core
+Created-By: brandon
+Build-Jdk: 1.8

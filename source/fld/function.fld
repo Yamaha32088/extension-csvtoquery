@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE func-lib PUBLIC "-//Lucee//DTD CFML Function Library 1.0//EN"
+	"dtd/web-cfmfunctionlibrary_1_0.dtd">
+	<func-lib>
+		<flib-version>1.00</flib-version>
+		<short-name>csvtoquery</short-name>
+		<uri>http://www.lucee.org/cf-fld-3-1</uri>
+		<display-name>Lucee Core Function Library</display-name>
+		<description>All build in Functions of Lucee</description>
+		
+		<function>
+			<name>CSVToQuery</name>
+			<class bundle-name="{bundle-name}" bundle-version="{bundle-version}">com.squidfoundry.CSVToQuery</class>
+			<description>Creates a query from a CSV</description>
+			<argument>
+				<name>csv</name>
+				<type>string</type>
+				<required>no</required>
+				<description>The CSV String</description>
+			</argument>
+			<argument>
+				<name>filepath</name>
+				<type>string</type>
+				<required>no</required>
+				<description>The filepath to the CSV</description>
+			</argument>
+			<argument>
+				<name>firstRowIsHeader</name>
+				<type>boolean</type>
+				<required>no</required>
+				<description>Is the first row the header</description>
+			</argument>
+			<argument>
+				<name>trim</name>
+				<type>boolean</type>
+				<required>no</required>
+				<description>Trim whitespace</description>
+			</argument>
+			<argument>
+				<name>delimeter</name>
+				<type>string</type>
+				<required>no</required>
+				<description>CSV delimited by</description>
+			</argument>
+			<return>
+				<type>any</type>
+			</return>
+		</function>
+	</func-lib>
