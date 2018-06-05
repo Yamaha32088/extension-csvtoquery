@@ -34,15 +34,15 @@ public final class CSVToQuery extends BIF implements Function {
 	private static boolean csvIsFile;
 
 	public static Object call(PageContext pc, String csv) throws PageException, IOException {
-		return _call(pc, csv, "", false, false, null);
+		return _call(pc, csv, "", true, true, null);
 	}
 	
 	public static Object call(PageContext pc, String csv, String filePath) throws PageException, IOException {
-		return _call(pc, csv, filePath, false, false, null);
+		return _call(pc, csv, filePath, true, true, null);
 	}
 
 	public static Object call(PageContext pc, String csv, String filePath, Boolean firstRowIsHeader) throws PageException, IOException {
-		return _call(pc, csv, filePath, firstRowIsHeader, null, null);
+		return _call(pc, csv, filePath, firstRowIsHeader, true, null);
 	}
 	
 	public static Object call(PageContext pc, String csv, String filePath, Boolean firstRowIsHeader, Boolean trim) throws PageException, IOException {
