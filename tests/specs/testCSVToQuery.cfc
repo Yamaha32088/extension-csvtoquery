@@ -32,9 +32,9 @@ component displayname="My test suite" extends="testbox.system.BaseSpec" {
 		$assert.isTrue( data.Column_2 == 'value4' )
 	}
 
-	function testUsingPipDelimieter() {
+	function testUsingPipeDelimieter() {
 		var pipeDelimitedFile = FileRead('data/pipeDelimited.csv');
-		var results = CSVToQuery(csv=pipeDelimitedFile, delimeter="|", firstRowIsHeader=true);
+		var results = CSVToQuery(csv=pipeDelimitedFile, delimiter="|", firstRowIsHeader=true);
 		$assert.isTrue( results.columnExists('Testing1') )
 		$assert.isTrue( results.columnExists('Testing2') )
 

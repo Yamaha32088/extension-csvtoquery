@@ -37,7 +37,7 @@
 				<description>Trim whitespace</description>
 			</argument>
 			<argument>
-				<name>delimeter</name>
+				<name>delimiter</name>
 				<type>string</type>
 				<required>no</required>
 				<description>CSV delimited by</description>
