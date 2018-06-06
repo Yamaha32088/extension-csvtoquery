@@ -138,7 +138,7 @@ public final class CSVToQuery extends BIF implements Function {
 	
 	private static CSVFormat getCSVFormat(Character delimiter) {
 		CSVFormat format = CSVFormat.RFC4180;
-		format = format.withIgnoreSurroundingSpaces();
+		format = format.withIgnoreSurroundingSpaces().withIgnoreEmptyLines(true);
 		format = (delimiter != null) ? format.withDelimiter(delimiter) : format;
 		return format;
 	}

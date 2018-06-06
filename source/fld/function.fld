@@ -28,12 +28,14 @@
 				<name>firstRowIsHeader</name>
 				<type>boolean</type>
 				<required>no</required>
+				<default>true</default>
 				<description>Is the first row the header</description>
 			</argument>
 			<argument>
 				<name>trim</name>
 				<type>boolean</type>
 				<required>no</required>
+				<default>true</default>
 				<description>Trim whitespace</description>
 			</argument>
 			<argument>
