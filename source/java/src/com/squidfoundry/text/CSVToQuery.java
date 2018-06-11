@@ -1,4 +1,4 @@
-package com.squidfoundry;
+package com.squidfoundry.text;
 
 import lucee.commons.io.IOUtil;
 import lucee.commons.io.res.Resource;

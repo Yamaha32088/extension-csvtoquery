@@ -70,7 +70,7 @@ id: "${id}"
 name: "${label}"
 description: "${description}"
 start-bundles: true
-resource: "[{'class':'${class}','bundleName':'${bundlename}','bundleVersion':'${bundleversion}${build.number}${appendix}','scheme':'csvtoquery','lock-timeout':'10000'}]"
+
 </echo>
 	</target>
 	
@@ -92,7 +92,7 @@ resource: "[{'class':'${class}','bundleName':'${bundlename}','bundleVersion':'${
 		<loadfile property="c1" srcFile="${fld}/function.fld" />
 		<replace haystack="${c1}" needle="{bundle-name}" repl="${bundlename}" property="c2"/>
 		<replace haystack="${c2}" needle="{bundle-version}" repl="${bundleversion}${build.number}${appendix}" property="c3"/>
-		<echo message="${c3}" file="${dist}/extension/flds/functions.fld"/>
+		<echo message="${c3}" file="${dist}/extension/flds/csv-functions.fld"/>
 		
 		<copy todir="${dist}/extension/jars">
 	      <fileset dir="${lib}">
