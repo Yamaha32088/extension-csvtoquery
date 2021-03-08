@@ -9,6 +9,7 @@ import lucee.runtime.exp.PageException;
 import lucee.runtime.ext.function.BIF;
 import lucee.runtime.ext.function.Function;
 import lucee.runtime.op.Caster;
+import lucee.runtime.type.util.CollectionUtil;
 import lucee.runtime.type.Array;
 import lucee.runtime.type.ArrayImpl;
 import lucee.runtime.type.QueryImpl;
@@ -106,7 +107,7 @@ public final class CSVToQuery extends BIF implements Function {
 			}
 		}
 		
-		return new QueryImpl(headers, rows, "query");
+		return new QueryImpl(CollectionUtil.toKeys(headers, true), rows, "query");
 	}
 
 	@Override
